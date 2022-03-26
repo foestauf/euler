@@ -1,17 +1,18 @@
+use std::io;
+mod problem_1;
+
 fn main() {
     println!("Project Euler");
-    let mut sum: u32 = 0;
-    for i in 0..1000 {
-        let three_modulus: u32 = i % 3;
-        let five_modulus: u32 = i % 5;
-        if three_modulus == 0 {
-            sum = sum + i;
-            continue;
-        }
-        if five_modulus == 0 {
-            sum = sum + i;
-            continue;
-        }
+    let mut problem_number = String::new();
+    println!("Enter a problem number:");
+
+    io::stdin().read_line(&mut problem_number).expect("Failed to read line");
+
+    match problem_number.trim() {
+        "1" => problem_1::solve(),
+        _ => println!("Invalid problem number"),
     }
-    println!("sum is {}", sum);
+
+    println!("Done!");
 }
+
