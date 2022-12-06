@@ -3,6 +3,7 @@ mod problem_1;
 mod problem_2;
 mod problem_3;
 mod problem_4;
+mod problem_5;
 
 fn main() {
     println!("Project Euler");
@@ -16,6 +17,7 @@ fn main() {
         "2" => problem_2::solve(),
         "3" => problem_3::solve(),
         "4" => problem_4::solve(),
+        "5" => problem_5::solve(),
         _ => println!("Invalid problem number"),
     }
 
