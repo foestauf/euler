@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 num-bigint = "0.4.0"
+num-traits = "0.2.14"
