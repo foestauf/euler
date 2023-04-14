@@ -10,6 +10,9 @@ mod problem_9;
 mod problem_7;
 mod problem_10;
 mod problem_11;
+mod problem_12;
+mod problem_13;
+
 
 fn main() {
     println!("Project Euler");
@@ -30,6 +33,8 @@ fn main() {
         "9" => problem_9::solve(),
         "10" => problem_10::solve(),
         "11" => problem_11::solve(),
+        "12" => problem_12::solve(),
+        "13" => problem_13::solve(),
         _ => println!("Invalid problem number"),
     }
 
