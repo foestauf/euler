@@ -22,6 +22,10 @@ mod problem_18;
 mod problem_19;
 mod problem_20;
 mod problem_21;
+mod problem_22;
+mod problem_23;
+mod problem_24;
+mod problem_25;
 
 
 fn main() {
@@ -55,6 +59,10 @@ fn main() {
         "19" => problem_19::solve(),
         "20" => problem_20::solve(),
         "21" => problem_21::solve(),
+        "22" => problem_22::solve(),
+        "23" => problem_23::solve(),
+        "24" => problem_24::solve(),
+        "25" => problem_25::solve(),
         _ => println!("Invalid problem number"),
     }
 
