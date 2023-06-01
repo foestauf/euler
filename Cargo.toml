@@ -1,5 +1,5 @@
 [package]
-name = "euler"
+name = "euler-project"
 version = "0.1.0"
 edition = "2021"
 
@@ -10,3 +10,6 @@ tokio = { version = "1", features = ["full"] }
 num-bigint = "0.4.0"
 num-traits = "0.2.14"
 num = "0.4"
+permutohedron = "0.2.4"
+primal = "0.3.2"
+
