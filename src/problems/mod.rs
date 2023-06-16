@@ -35,6 +35,7 @@ pub mod problem_34;
 pub mod problem_35;
 pub mod problem_36;
 pub mod problem_37;
+pub mod problem_38;
 
 
 
@@ -77,6 +78,7 @@ pub fn run_problem(number: &str) {
         "35" => problem_35::solve(),
         "36" => problem_36::solve(),
         "37" => problem_37::solve(),
+        "38" => problem_38::solve(),
         _ => println!("Invalid problem number"),
     }
 }
