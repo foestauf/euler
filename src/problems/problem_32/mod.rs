@@ -1,4 +1,5 @@
 use std::collections::HashSet;
+use crate::utils::is_pandigital;
 
 pub fn solve() {
     let mut products = HashSet::new();
@@ -17,20 +18,3 @@ pub fn solve() {
     println!("The sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital: {}", sum);
 }
 
-fn is_pandigital(s: &str) -> bool {
-    if s.len() != 9 {
-        return false;
-    }
-
-    let mut digits = [false; 9];
-
-    for c in s.chars() {
-        let digit = c.to_digit(10).unwrap() as usize;
-        if digit == 0 || digits[digit - 1] {
-            return false;
-        }
-        digits[digit - 1] = true;
-    }
-
-    true
-}
